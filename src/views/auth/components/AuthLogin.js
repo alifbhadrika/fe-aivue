@@ -58,8 +58,8 @@ const AuthLogin = ({ isClient = false, ...others }) => {
             // TODO - remove hardcoded payload
             if (!isClient) {
                 await login({
-                    email: 'vihagi6249@ippals.com',
-                    password: 'JNZNzIVwigUxvWCH'
+                    email: email,
+                    password: password
                 })
                     .then((res) => {
                         if (res.status === 200) {
