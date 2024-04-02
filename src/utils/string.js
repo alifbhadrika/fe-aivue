@@ -35,6 +35,6 @@ export const stringAvatar = (name) => {
         sx: {
             bgcolor: stringToColor(name)
         },
-        children: `${nameUpper.split(' ')[0][0]}${nameUpper.split(' ')[1][0]}`
+        children: nameUpper[0]
     };
 };
