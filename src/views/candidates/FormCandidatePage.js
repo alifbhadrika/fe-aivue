@@ -82,7 +82,7 @@ function FormCandidatePage() {
             payloadFormData.append('position_id', position.id);
             payloadFormData.append('pic_id', pic.id);
             payloadFormData.append('expired_duration', expiredDuration);
-            payloadFormData.append('start_time', '26/07/2023 10:00');
+            payloadFormData.append('start_time', format(new Date(startDateTime), 'dd/MM/yyyy hh:mm'));
 
             const res = await createCandidate(payloadFormData);
             dispatch({ type: SET_NOTIFICATION, notification: generateNotification(res) });
